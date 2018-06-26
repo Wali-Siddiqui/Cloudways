@@ -1,0 +1,5 @@
+ps -e -orss=,args= | sort -b -k1,1n | pr -TW$COLUMNS
+ps -e -o pcpu,nice,state,cputime,args --sort -pcpu | head -10
+
+
+
